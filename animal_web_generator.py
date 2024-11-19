@@ -86,20 +86,3 @@ def generate_html(data_file, template_file, output_file):
         print(f"File error: {e}")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
-
-
-def main():
-    """
-    Main function to generate the animal repository HTML.
-    """
-    data_file = "animals_data.json"
-    template_file = "animals_template.html"
-    output_file = "animals.html"
-
-    print("Generating animal repository HTML...")
-    generate_html(data_file, template_file, output_file)
-    print("Process completed.")
-
-
-if __name__ == "__main__":
-    main()
